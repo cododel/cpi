@@ -1,0 +1,21 @@
+# This checkout can be a LIVE pi home. Publish only explicitly selected paths.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+!/.github/
+!/agent/
+/agent/*
+!/agent/extensions/
+!/agent/agents/
+/agent/extensions/*
+!/agent/extensions/codex-web-search.ts
+!/agent/extensions/token-speed.ts
+!/agent/extensions/subagent/
+/agent/extensions/subagent/*
+!/agent/extensions/subagent/index.ts
+
+.DS_Store
+.env*
+*.pem
+*.key
