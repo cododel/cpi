@@ -17,13 +17,12 @@
 ```sh
 git clone https://github.com/cododel/cpi.git
 cd cpi
-mkdir -p ~/.pi/agent/extensions/subagent ~/.pi/agent/agents
+mkdir -p ~/.pi/agent/extensions ~/.pi/agent/agents
 cp -n agent/extensions/*.ts ~/.pi/agent/extensions/
-cp -n agent/extensions/subagent/index.ts ~/.pi/agent/extensions/subagent/
 cp -n agent/agents/explorer.md ~/.pi/agent/agents/
 ```
 
-Выполни `/reload` в открытой сессии pi. Для проверки попроси: «Запусти explorer: прочитай README.md в каталоге cpi и перечисли требования установки». При обновлении сравни локальные версии: `cp -n` намеренно пропускает существующие файлы.
+Если раньше устанавливал расширение как `~/.pi/agent/extensions/subagent/index.ts`, перенеси старую копию за пределы `extensions/`, чтобы pi не загрузил инструмент дважды. Выполни `/reload` в открытой сессии pi. Для проверки попроси: «Запусти explorer: прочитай README.md в каталоге cpi и перечисли требования установки». При обновлении сравни локальные версии: `cp -n` намеренно пропускает существующие файлы.
 
 ## Профили и приватность
 

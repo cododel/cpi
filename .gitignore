@@ -11,9 +11,7 @@
 /agent/extensions/*
 !/agent/extensions/codex-web-search.ts
 !/agent/extensions/token-speed.ts
-!/agent/extensions/subagent/
-/agent/extensions/subagent/*
-!/agent/extensions/subagent/index.ts
+!/agent/extensions/subagent.ts
 
 .DS_Store
 .env*
